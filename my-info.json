@@ -1,7 +1,7 @@
 {
-  "favoriteColors": ["red", "orange", "black"],
-  "wantToVisit": "Netherlands",
+  "favorite_colors": ["red", "orange", "black"],
+  "want_to_visit": "Netherlands",
   "population": 17530000,
-  "willVisitIn5Years": false,
-  "favoriteFoods": ["Gulai Kawah", "Lamp Chop", "Biryani"]
+  "will_visit_in5_years": false,
+  "favorite_foods": ["Gulai Kawah", "Lamp Chop", "Biryani"]
 }
