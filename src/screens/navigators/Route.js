@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "../HomeScreen";
 import { CatalogScreen } from "../CatalogScreen";
 import { DetailScreen } from "../DetailScreen";
+import { ContactUsScreen } from "../ContactUsScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,11 @@ export function Route() {
         name={"detail"}
         component={DetailScreen}
         options={{ title: "Detail" }}
+      />
+      <Stack.Screen
+        name={"contactUs"} 
+        component={ContactUsScreen} 
+        options={{ title: "Contact Us" }}
       />
     </Stack.Navigator>
   );

@@ -18,6 +18,13 @@ export function HomeScreen({ navigation }) {
         >
           View Catalog
         </Button>
+        <Button
+        onPress={() => {
+          navigation.navigate("contactUs");
+        }}
+      >
+        Contact Us
+      </Button>
       </View>
     </ScrollView>
   );
