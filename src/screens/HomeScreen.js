@@ -1,16 +1,31 @@
-import { View } from "react-native";
+import { ScrollView, StatusBar, View } from "react-native";
 import { Button } from "react-native-paper";
 
 export function HomeScreen({ navigation }) {
   return (
-    <View style={[{ flex: 1, justifyContent: "center", alignItems: "center" }]}>
-      <Button
+    <ScrollView
+      contentContainerStyle={[
+        { flexGrow: 1, paddingTop: StatusBar.currentHeight },
+      ]}
+    >
+      <View
+        style={[{ flex: 1, justifyContent: "center", alignItems: "center" }]}
+      >
+        <Button
+          onPress={() => {
+            navigation.navigate("catalog");
+          }}
+        >
+          View Catalog
+        </Button>
+        <Button
         onPress={() => {
           navigation.navigate("contactUs");
         }}
       >
         Contact Us
       </Button>
-    </View>
+      </View>
+    </ScrollView>
   );
 }
